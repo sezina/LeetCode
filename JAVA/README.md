@@ -1,5 +1,5 @@
 
-Solved Count: 10 
+Solved Count: 11
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -11,3 +11,4 @@ Solved Count: 10
 * [Remove Element](https://oj.leetcode.com/problems/remove-element/)
 * [Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)
 * [Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)
+* [Same Tree](https://oj.leetcode.com/problems/same-tree/)
