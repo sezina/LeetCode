@@ -15,10 +15,9 @@ public class Solution {
         else if ((p == null && q != null) || (p != null && q == null) || (p.val != q.val))
             isSame = false;
         else if (p.val == q.val) {
-            isSame = true;
             boolean leftIsSame = isSameTree(p.left, q.left);
             boolean rightIsSame = isSameTree(p.right, q.right);
-            isSame &= leftIsSame & rightIsSame;
+            isSame = leftIsSame & rightIsSame;
         }
         
         return isSame;
