@@ -1,5 +1,5 @@
 
-Solved Count: 7
+Solved Count: 8
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -8,3 +8,4 @@ Solved Count: 7
 * [Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)
 * [Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 * [Remove Element](https://oj.leetcode.com/problems/remove-element/)
+* [Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)
