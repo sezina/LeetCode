@@ -13,3 +13,4 @@ Solved Count: 12
 * [Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)
 * [Same Tree](https://oj.leetcode.com/problems/same-tree/)
 * [Two Sum](https://oj.leetcode.com/problems/two-sum/)
+* [Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)
