@@ -1,5 +1,5 @@
 
-Solved Count: 12
+Solved Count: 14
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -14,3 +14,4 @@ Solved Count: 12
 * [Same Tree](https://oj.leetcode.com/problems/same-tree/)
 * [Two Sum](https://oj.leetcode.com/problems/two-sum/)
 * [Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)
+* [Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)
