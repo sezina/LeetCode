@@ -13,24 +13,13 @@ public class Solution {
             List<TreeLinkNode> temp = new ArrayList<TreeLinkNode>();
             int i = 0;
             while (i < nodes.size()) {
-                TreeLinkNode traversal = null;
                 while (i < nodes.size()) {
+                    if (i != nodes.size() - 1)
+                        nodes.get(i).next = nodes.get(i + 1);
                     if (nodes.get(i).left != null) {
-                        if (traversal == null) {
-                            traversal = nodes.get(i).left;
-                        } else {
-                            traversal.next = nodes.get(i).left;
-                            traversal = traversal.next;
-                        }
                         temp.add(nodes.get(i).left);
                     }
                     if (nodes.get(i).right != null) {
-                        if (traversal == null) {
-                            traversal = nodes.get(i).right;
-                        } else {
-                            traversal.next = nodes.get(i).right;
-                            traversal = traversal.next;
-                        }
                         temp.add(nodes.get(i).right);
                     }
                     i++;
