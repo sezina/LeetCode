@@ -1,5 +1,5 @@
 
-Solved Count: 17
+Solved Count: 18
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -18,3 +18,4 @@ Solved Count: 17
 * [Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)
 * [Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)
 * [Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)
+* [Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)
