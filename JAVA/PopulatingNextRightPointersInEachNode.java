@@ -16,12 +16,10 @@ public class Solution {
                 while (i < nodes.size()) {
                     if (i != nodes.size() - 1)
                         nodes.get(i).next = nodes.get(i + 1);
-                    if (nodes.get(i).left != null) {
+                    if (nodes.get(i).left != null)
                         temp.add(nodes.get(i).left);
-                    }
-                    if (nodes.get(i).right != null) {
+                    if (nodes.get(i).right != null)
                         temp.add(nodes.get(i).right);
-                    }
                     i++;
                 }
                 nodes.addAll(temp);
