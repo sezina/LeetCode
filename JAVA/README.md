@@ -1,5 +1,5 @@
 
-Solved Count: 21
+Solved Count: 22
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -22,3 +22,4 @@ Solved Count: 21
 * [Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)
 * [Maximum Subarrry](https://oj.leetcode.com/problems/maximum-subarray/)
 * [Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)
+* [Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)
