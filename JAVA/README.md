@@ -1,5 +1,5 @@
 
-Solved Count: 23
+Solved Count: 24
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -24,3 +24,4 @@ Solved Count: 23
 * [Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)
 * [Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)
 * [Merge Two Sorted List](https://oj.leetcode.com/problems/merge-two-sorted-lists/)
+* [Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)
