@@ -13,3 +13,26 @@ public class Solution {
         }
     }
 }
+
+public class Solution2 {
+    public void sortColors(int[] A) {
+        int f = 0, b = A.length - 1, temp;
+        for (int i = 0; i <= b; i++) {
+            if (A[i] == 0 && f < i) {
+                while(f < i && A[f] == 0) f++;
+                if (f != i) {
+                    A[i] = A[f];
+                    A[f] = 0;
+                    i--;
+                }
+            } else if (A[i] == 2 && b > i) {
+                while(b > i && A[b] == 2) b--;
+                if (b != i) {
+                    A[i] = A[b];
+                    A[b] = 2;
+                    i--;
+                }
+            }
+        }
+    }
+}
