@@ -36,3 +36,19 @@ public class Solution2 {
         }
     }
 }
+
+public class Solution3 {
+    public void sortColors(int[] A) {
+        int j = -1, k = -1, temp;
+        for (int i = 0; i < A.length; i++) {
+            temp = A[i];
+            A[i] = 2;
+            if (temp == 0) {
+                A[++j] = 1;
+                A[++k] = 0;
+            } else if (temp == 1) {
+                A[++j] = 1;
+            }
+        }
+    }
+}
