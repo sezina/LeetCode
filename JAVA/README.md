@@ -1,5 +1,5 @@
 
-Solved Count: 27
+Solved Count: 28
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -28,3 +28,4 @@ Solved Count: 27
 * [Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 * [Swap Nodes In Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)
 * [Plus One](https://oj.leetcode.com/problems/plus-one/)
+* [Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)
