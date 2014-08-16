@@ -1,5 +1,5 @@
 
-Solved Count: 32
+Solved Count: 33
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -33,3 +33,4 @@ Solved Count: 32
 * [Sort Colors](https://oj.leetcode.com/problems/sort-colors/)
 * [Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)
 * [Candy](https://oj.leetcode.com/problems/candy/)
+* [Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)
