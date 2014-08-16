@@ -29,3 +29,19 @@ public class Solution {
         return true;
     }
 }
+
+// recursive
+public class Solution2 {
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null) 
+            return true;
+        return symmetricTest(root.left, root.right);
+    }
+    
+    public static boolean symmetricTest(TreeNode leftNode, TreeNode rightNode) {
+        if (leftNode == null && rightNode == null) return true;
+        if (leftNode == null || rightNode == null) return false;
+        if (leftNode.val !=  rightNode.val) return false;
+        return symmetricTest(leftNode.left, rightNode.right) && symmetricTest(leftNode.right, rightNode.left);
+    }
+}
