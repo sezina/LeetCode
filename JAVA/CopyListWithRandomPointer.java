@@ -36,3 +36,20 @@ public class Solution {
         return copys[0];
     }
 }
+
+public class Solution2 {
+    public RandomListNode copyRandomList(RandomListNode head) {
+        Map<RandomListNode, RandomListNode> nodeMap = new HashMap<RandomListNode, RandomListNode>();
+        return copyHelper(head, nodeMap);
+    }
+    
+    public RandomListNode copyHelper(RandomListNode head, Map<RandomListNode, RandomListNode> nodeMap) {
+        if (head == null) return null;
+        if (nodeMap.containsKey(head)) return nodeMap.get(head);
+        RandomListNode result = new RandomListNode(head.label);
+        nodeMap.put(head, result);
+        result.next = copyHelper(head.next, nodeMap);
+        result.random = copyHelper(head.random, nodeMap);
+        return result;
+    }
+}
