@@ -1,5 +1,5 @@
 
-Solved Count: 36
+Solved Count: 37
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -37,3 +37,4 @@ Solved Count: 36
 * [Copy List with Random Pointer](https://oj.leetcode.com/problems/copy-list-with-random-pointer/)
 * [Remove Duplicates From Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 * [Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)
+* [Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)
