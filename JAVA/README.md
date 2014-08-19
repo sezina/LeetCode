@@ -1,5 +1,5 @@
 
-Solved Count: 38
+Solved Count: 39
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -39,3 +39,4 @@ Solved Count: 38
 * [Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)
 * [Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)
 * [Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)
+* [Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)
