@@ -8,24 +8,20 @@
  * }
  */
 public class Solution {
+    private static final int IS_NOT_BALANCED = -1;
     public boolean isBalanced(TreeNode root) {
-        if (depth(root) == -1)
-            return false;
-        return true;
+        return depth(root) != IS_NOT_BALANCED;
     }
     
     public static int depth(TreeNode root) {
-        if (root == null)
-            return 0;
+        if (root == null) return 0;
         int leftDepth = depth(root.left);
-        if (leftDepth == -1)
-            return -1;
+        if (leftDepth == IS_NOT_BALANCED) return IS_NOT_BALANCED;
         int rightDepth = depth(root.right);
-        if (rightDepth == -1)
-            return -1;
+        if (rightDepth == IS_NOT_BALANCED) return IS_NOT_BALANCED;
         
         if (Math.abs(leftDepth - rightDepth) < 2)
             return Math.max(leftDepth, rightDepth) + 1;
-        return -1;
+        return IS_NOT_BALANCED;
     }
 }
