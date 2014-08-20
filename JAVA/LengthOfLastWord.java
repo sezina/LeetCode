@@ -12,3 +12,11 @@ public class Solution {
         return lastWord.length();
     }
 }
+
+public class Solution2 {
+    public int lengthOfLastWord(String s) {
+        s = s.trim();
+        int last = s.lastIndexOf(" ");
+        return s.length() - last - 1;
+    }
+}
