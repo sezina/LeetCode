@@ -1,5 +1,5 @@
 
-Solved Count: 41
+Solved Count: 42
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -42,3 +42,4 @@ Solved Count: 41
 * [Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)
 * [Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)
 * [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)
+* [Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)
