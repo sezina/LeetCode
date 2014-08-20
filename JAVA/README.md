@@ -1,5 +1,5 @@
 
-Solved Count: 43
+Solved Count: 44
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -44,3 +44,4 @@ Solved Count: 43
 * [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)
 * [Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)
 * [Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)
+* [Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
