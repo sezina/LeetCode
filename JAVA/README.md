@@ -1,5 +1,5 @@
 
-Solved Count: 45
+Solved Count: 46
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -46,3 +46,4 @@ Solved Count: 45
 * [Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)
 * [Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 * [Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)
+* [Rotate List](https://oj.leetcode.com/problems/rotate-list/)
