@@ -1,5 +1,5 @@
 
-Solved Count: 48
+Solved Count: 49
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -49,3 +49,4 @@ Solved Count: 48
 * [Rotate List](https://oj.leetcode.com/problems/rotate-list/)
 * [Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)
 * [Flatten Binary Tree to Linked List](https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+* [Pow(x, n)](https://oj.leetcode.com/problems/powx-n/)
