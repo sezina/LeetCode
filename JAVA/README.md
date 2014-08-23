@@ -1,5 +1,5 @@
 
-Solved Count: 53
+Solved Count: 54
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -54,3 +54,4 @@ Solved Count: 53
 * [Remove Duplicates from Sorted List II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 * [Permutations](https://oj.leetcode.com/problems/permutations/)
 * [Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)
+* [Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)
