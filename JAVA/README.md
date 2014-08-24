@@ -1,5 +1,5 @@
 
-Solved Count: 58
+Solved Count: 59
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -59,3 +59,4 @@ Solved Count: 58
 * [Subsets](https://oj.leetcode.com/problems/subsets/)
 * [Permutations II](https://oj.leetcode.com/problems/permutations-ii/)
 * [Next Permutation](https://oj.leetcode.com/problems/next-permutation/)
+* [Partition List](https://oj.leetcode.com/problems/partition-list/)
