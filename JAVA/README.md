@@ -1,5 +1,5 @@
 
-Solved Count: 61
+Solved Count: 62
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -62,3 +62,4 @@ Solved Count: 61
 * [Partition List](https://oj.leetcode.com/problems/partition-list/)
 * [Reorder List](https://oj.leetcode.com/problems/reorder-list/)
 * [Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)
+* [Sort List](https://oj.leetcode.com/problems/sort-list/)
