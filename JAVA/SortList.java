@@ -61,3 +61,48 @@ public class Solution {
         arr[pos2] = temp;
     }
 }
+
+// recursive merge sort
+public class Solution2 {
+    public ListNode sortList(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode left = head, right = head.next;
+        while (right != null && right.next != null) {
+            left = left.next;
+            right = right.next.next;
+        }
+        right = left.next;
+        left.next = null;
+        left = head;
+        left = sortList(left);
+        right = sortList(right);
+        ListNode ret = mergeList(left, right);
+        return ret;
+    }
+    
+    private ListNode mergeList(ListNode left, ListNode right) {
+        ListNode fakeHead = new ListNode(0), temp = fakeHead;
+        while (left != null && right != null) {
+            if (left.val < right.val) {
+                if (fakeHead.next == null)
+                    fakeHead.next = left;
+                else 
+                    temp.next = left;
+                temp = temp.next;
+                left = left.next;
+            } else {
+                if (fakeHead.next == null)
+                    fakeHead.next = right;
+                else 
+                    temp.next = right;
+                temp = temp.next;
+                right = right.next;
+            }
+        }
+        if (left == null)
+            temp.next = right;
+        else if (right == null)
+            temp.next = left;
+        return fakeHead.next;
+    }
+}
