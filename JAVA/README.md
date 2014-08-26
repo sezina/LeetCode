@@ -1,5 +1,5 @@
 
-Solved Count: 64
+Solved Count: 65
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -65,3 +65,4 @@ Solved Count: 64
 * [Sort List](https://oj.leetcode.com/problems/sort-list/)
 * [Reverse Linked List II](https://oj.leetcode.com/problems/reverse-linked-list-ii/)
 * [Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)
+* [Reverse Nodes in K Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)
