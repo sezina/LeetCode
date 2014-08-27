@@ -1,5 +1,5 @@
 
-Solved Count: 66
+Solved Count: 67
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -67,3 +67,4 @@ Solved Count: 66
 * [Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)
 * [Reverse Nodes in K Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)
 * [Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)
+* [Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)
