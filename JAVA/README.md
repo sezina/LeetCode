@@ -1,5 +1,5 @@
 
-Solved Count: 69
+Solved Count: 70
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -70,3 +70,4 @@ Solved Count: 69
 * [Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)
 * [Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)
 * [Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)
+* [Combination Sum](https://oj.leetcode.com/problems/combination-sum/)
