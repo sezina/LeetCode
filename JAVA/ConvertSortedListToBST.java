@@ -32,3 +32,27 @@ public class Solution {
         return treeHead;
     }
 }
+
+// bottom-up solution
+public class Solution {
+    public TreeNode sortedListToBST(ListNode head) {
+        int size = 0;
+        ListNode traverse = head;
+        while (traverse != null) {
+            traverse = traverse.next;
+            size++;
+        }
+        return helper(new ListNode[]{head}, 0, size - 1);
+    }
+    
+    private TreeNode helper(ListNode[] head, int start, int end) {
+        if (start > end) return null;
+        int mid = start + (end - start) / 2; // avoids overflow
+        TreeNode left = helper(head, start, mid - 1);
+        TreeNode parent = new TreeNode(head[0].val);
+        parent.left = left;
+        head[0] = head[0].next;
+        parent.right = helper(head, mid + 1, end);
+        return parent;
+    }
+}
