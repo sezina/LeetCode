@@ -21,3 +21,22 @@ public class Solution {
         return sb.reverse().toString();
     }
 }
+
+public class Solution {
+    public String addBinary(String a, String b) {
+        int aLen = a.length(), bLen = b.length();
+        int maxLen = Math.max(aLen, bLen);
+        StringBuilder sb = new StringBuilder();
+        int carry = 0, temp, i = 0;
+        while (i < maxLen) {
+            int p = i < aLen ? (a.charAt(aLen - i - 1) - '0') : 0;
+            int q = i < bLen ? (b.charAt(bLen - i - 1) - '0') : 0;
+            temp = p + q + carry;
+            carry = temp / 2;
+            sb.append(temp % 2);
+            i++;
+        }
+        if (carry == 1) sb.append(1);
+        return sb.reverse().toString();
+    }
+}
