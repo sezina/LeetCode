@@ -1,5 +1,5 @@
 
-Solved Count: 73
+Solved Count: 74
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -74,3 +74,4 @@ Solved Count: 73
 * [Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)
 * [Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)
 * [Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/)
+* [Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)
