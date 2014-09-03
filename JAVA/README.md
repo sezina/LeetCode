@@ -1,5 +1,5 @@
 
-Solved Count: 76
+Solved Count: 77
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -77,3 +77,4 @@ Solved Count: 76
 * [Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)
 * [Add Binary](https://oj.leetcode.com/problems/add-binary/)
 * [Decode Ways](https://oj.leetcode.com/problems/decode-ways/)
+* [Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/)
