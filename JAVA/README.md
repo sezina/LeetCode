@@ -1,5 +1,5 @@
 
-Solved Count: 78
+Solved Count: 79
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -79,3 +79,4 @@ Solved Count: 78
 * [Decode Ways](https://oj.leetcode.com/problems/decode-ways/)
 * [Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/)
 * [Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)
+* [Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
