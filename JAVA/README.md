@@ -1,5 +1,5 @@
 
-Solved Count: 83
+Solved Count: 84
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -84,3 +84,4 @@ Solved Count: 83
 * [Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/)
 * [Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)
 * [Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/)
+* [Count and Say](https://oj.leetcode.com/problems/count-and-say/)
