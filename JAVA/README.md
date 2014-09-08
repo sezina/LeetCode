@@ -1,5 +1,5 @@
 
-Solved Count: 96
+Solved Count: 97
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -96,3 +96,4 @@ Solved Count: 96
 * [Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 * [Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)
 * [Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)
+* [ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)
