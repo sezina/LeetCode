@@ -1,3 +1,4 @@
+// f(n) = f(0)f(n - 1) + f(1)f(n - 2) + ...
 public class Solution {
     public int numTrees(int n) {
         if (n == 0) return 0;
