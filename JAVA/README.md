@@ -1,5 +1,5 @@
 
-Solved Count: 97
+Solved Count: 98
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -97,3 +97,4 @@ Solved Count: 97
 * [Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)
 * [Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)
 * [ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)
+* [Multiply Strings](https://oj.leetcode.com/problems/multiply-strings/)
