@@ -1,4 +1,6 @@
 // naive method
+// Catalan number: https://en.wikipedia.org/wiki/Catalan_number
+// Dyck Word: https://en.wikipedia.org/wiki/Dyck_language
 public class Solution {
     private static final String UNIT = "()";
     public List<String> generateParenthesis(int n) {
