@@ -56,3 +56,25 @@ public class Solution {
         return res;
     }
 }
+
+// neat code
+public class Solution {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        if (newInterval == null) return intervals;
+        List<Interval> res = new ArrayList<Interval>();
+        for (int i = 0; i < intervals.size(); i++) {
+            Interval temp = intervals.get(i);
+            if (newInterval.end < temp.start) {
+                res.add(newInterval);
+                newInterval = temp;
+            } else if (newInterval.start > temp.end) {
+                res.add(temp);
+            } else {
+                newInterval.start = Math.min(newInterval.start, temp.start);
+                newInterval.end = Math.max(newInterval.end, temp.end);
+            }
+        }
+        res.add(newInterval);
+        return res;
+    }
+}
