@@ -1,5 +1,5 @@
 
-Solved Count: 98
+Solved Count: 99
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -99,3 +99,4 @@ Solved Count: 98
 * [ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)
 * [Multiply Strings](https://oj.leetcode.com/problems/multiply-strings/)
 * [Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)
+* [Insert Interval](https://oj.leetcode.com/problems/insert-interval/)
