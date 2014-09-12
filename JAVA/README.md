@@ -1,5 +1,5 @@
 
-Solved Count: 101
+Solved Count: 102
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -102,3 +102,4 @@ Solved Count: 101
 * [Insert Interval](https://oj.leetcode.com/problems/insert-interval/)
 * [Simplify Path](https://oj.leetcode.com/problems/simplify-path/)
 * [Clone Graph](https://oj.leetcode.com/problems/clone-graph/)
+* [Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)
