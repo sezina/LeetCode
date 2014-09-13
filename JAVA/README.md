@@ -1,5 +1,5 @@
 
-Solved Count: 102
+Solved Count: 103
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -103,3 +103,4 @@ Solved Count: 102
 * [Simplify Path](https://oj.leetcode.com/problems/simplify-path/)
 * [Clone Graph](https://oj.leetcode.com/problems/clone-graph/)
 * [Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)
+* [Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)
