@@ -1,5 +1,5 @@
 
-Solved Count: 105
+Solved Count: 106
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -106,3 +106,4 @@ Solved Count: 105
 * [Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)
 * [Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
 * [Word Ladder](https://oj.leetcode.com/problems/word-ladder/)
+* [Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)
