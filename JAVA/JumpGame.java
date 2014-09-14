@@ -8,3 +8,14 @@ public class Solution {
         return target == 0;
     }
 }
+
+// more neat code
+public class Solution {
+    public boolean canJump(int[] A) {
+        if (A.length < 2) return true;
+        int step = A[0];
+        for (int i = 0; step > 0 && step + i < A.length; i++)
+            step = Math.max(step - 1, A[i]);
+        return step != 0;
+    }
+}
