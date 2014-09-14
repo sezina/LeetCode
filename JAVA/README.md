@@ -1,5 +1,5 @@
 
-Solved Count: 107
+Solved Count: 108
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -108,3 +108,4 @@ Solved Count: 107
 * [Word Ladder](https://oj.leetcode.com/problems/word-ladder/)
 * [Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)
 * [Jump Game](https://oj.leetcode.com/problems/jump-game/)
+* [3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)
