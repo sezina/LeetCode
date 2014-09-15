@@ -1,5 +1,5 @@
 
-Solved Count: 109
+Solved Count: 110
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -110,3 +110,4 @@ Solved Count: 109
 * [Jump Game](https://oj.leetcode.com/problems/jump-game/)
 * [3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)
 * [First Missing Positive](https://oj.leetcode.com/problems/first-missing-positive/)
+* [Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)
