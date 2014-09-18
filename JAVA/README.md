@@ -1,5 +1,5 @@
 
-Solved Count: 114
+Solved Count: 115
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -115,3 +115,4 @@ Solved Count: 114
 * [N-Queens](https://oj.leetcode.com/problems/n-queens/)
 * [N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)
 * [Word Break II](https://oj.leetcode.com/problems/word-break-ii/)
+* [Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)
