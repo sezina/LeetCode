@@ -19,3 +19,20 @@ public class Solution {
         return min;
     }
 }
+
+// bottom up dp
+public class Solution {
+    public int minimumTotal(List<List<Integer>> triangle) {
+        if (triangle.isEmpty() || triangle.get(0).isEmpty()) return 0;
+        int th = triangle.size();
+        int[] results = new int[triangle.get(th - 1).size()];
+        for (int i = 0; i < triangle.get(th - 1).size(); i++)
+            results[i] = triangle.get(th - 1).get(i);
+        
+        for (int i = th - 2; i >= 0; i--) 
+            for (int j = 0; j <= i; j++) 
+                results[j] = Math.min(results[j], results[j + 1]) + triangle.get(i).get(j);
+
+        return results[0];
+    }
+}
