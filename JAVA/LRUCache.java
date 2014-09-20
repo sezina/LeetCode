@@ -112,3 +112,30 @@ public class LRUCache {
         }
     }
 }
+
+// a hack
+public class LRUCache {
+    
+    private static int cap;
+    private Map<Integer, Integer> cache;
+    
+    public LRUCache(int capacity) {
+        this.cap = capacity;
+        cache = new java.util.LinkedHashMap(capacity, 0.75f,true) {
+            protected boolean removeEldestEntry(Map.Entry eldest) {
+                return size() > cap;
+            }
+        };
+    }
+    
+    public int get(int key) {
+        if (cache.containsKey(key)) {
+            return cache.get(key);
+        }
+        return -1;
+    }
+    
+    public void set(int key, int value) {
+        cache.put(key, value);
+    }
+}
