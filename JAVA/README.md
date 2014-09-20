@@ -1,5 +1,5 @@
 
-Solved Count: 117
+Solved Count: 118
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -118,3 +118,4 @@ Solved Count: 117
 * [Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)
 * [Subsets II](https://oj.leetcode.com/problems/subsets-ii/)
 * [Restore IP Addresses](https://oj.leetcode.com/problems/restore-ip-addresses/)
+* [LRU Cache](https://oj.leetcode.com/problems/lru-cache/)
