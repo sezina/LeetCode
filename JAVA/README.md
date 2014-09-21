@@ -1,5 +1,5 @@
 
-Solved Count: 120
+Solved Count: 121
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -121,3 +121,4 @@ Solved Count: 120
 * [LRU Cache](https://oj.leetcode.com/problems/lru-cache/)
 * [Rotate Image](https://oj.leetcode.com/problems/rotate-image/)
 * [Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)
+* [Gas Station](https://oj.leetcode.com/problems/gas-station/)
