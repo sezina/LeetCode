@@ -1,5 +1,5 @@
 
-Solved Count: 124
+Solved Count: 125
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -125,3 +125,4 @@ Solved Count: 124
 * [Anagrams](https://oj.leetcode.com/problems/anagrams/)
 * [Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)
 * [Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)
+* [Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)
