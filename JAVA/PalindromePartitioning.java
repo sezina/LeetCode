@@ -4,19 +4,21 @@ public class Solution {
         res = new ArrayList<List<String>>();
         if (s.isEmpty()) return res;
         Map<Integer, List<String>> map = new HashMap<Integer, List<String>>();
-        List<String> list = new ArrayList<String>();
-        list.add(s.substring(0,1));
-        map.put(0, list);
+        map.put(0, new ArrayList<String>());
+        map.get(0).add(s.substring(0, 1));
         for (int i = 1; i < s.length(); i++) {
-            list = new ArrayList<String>();
-            list.add(s.substring(i, i + 1));
-            map.put(i, list);
+            map.put(i, new ArrayList<String>());
+            map.get(i).add(s.substring(i, i + 1));
+            
+            // even length palindrome
             int low = i - 1, high = i;
             while (low >= 0 && high < s.length() && s.charAt(low) == s.charAt(high)) {
                 map.get(low).add(s.substring(low, high + 1));
                 low--;
                 high++;
             }
+            
+            // odd length palindrome
             low = i - 1;
             high = i + 1;
             while (low >= 0 && high < s.length() && s.charAt(low) == s.charAt(high)) {
