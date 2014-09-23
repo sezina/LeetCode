@@ -1,5 +1,5 @@
 
-Solved Count: 127
+Solved Count: 128
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -128,3 +128,4 @@ Solved Count: 127
 * [Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)
 * [Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)
 * [Palindrome Partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/)
+* [Word Search](https://oj.leetcode.com/problems/word-search/)
