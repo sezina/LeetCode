@@ -1,6 +1,5 @@
 public class Solution {
     public int maxProduct(int[] A) {
-        if (A.length == 0) return 0;
         if (A.length == 1) return A[0];
         List<Integer> zeroIndex = new ArrayList<Integer>();
         List<Long> prods = new ArrayList<Long>();
@@ -52,5 +51,27 @@ public class Solution {
         }
         
         return (int)maxProd;
+    }
+}
+
+// neat code
+public class Solution {
+    public int maxProduct(int[] A) {
+        if (A.length == 1) return A[0];
+        int maxProd = 0, minProd = 0, res = Integer.MIN_VALUE;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] > 0) {
+                maxProd = Math.max(maxProd * A[i], A[i]);
+                minProd = minProd * A[i];
+            } else if (A[i] == 0) {
+                minProd = maxProd = 0;
+            } else {
+                int temp = maxProd;
+                maxProd = minProd * A[i];
+                minProd = Math.min(temp * A[i], A[i]); // handle the temp = 0 case
+            }
+            res = Math.max(maxProd, res);
+        }
+        return res;
     }
 }
