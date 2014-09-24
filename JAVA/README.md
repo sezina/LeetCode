@@ -1,5 +1,5 @@
 
-Solved Count: 130
+Solved Count: 131
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -131,3 +131,4 @@ Solved Count: 130
 * [Word Search](https://oj.leetcode.com/problems/word-search/)
 * [Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)
 * [Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)
+* [Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)
