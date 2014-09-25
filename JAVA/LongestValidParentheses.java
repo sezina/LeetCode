@@ -34,3 +34,29 @@ public class Solution {
         return maxLen;
     }
 }
+
+// dp solution
+public class Solution {
+    public int longestValidParentheses(String s) {
+        if (s == null || s.length() < 2) return 0;
+        int maxLen = 0;
+        Stack<Integer> stack = new Stack<Integer>(); // store indices of '('
+        int[] res = new int[s.length()]; // store the cur longest parentheses len
+        
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(')
+                stack.push(i);
+            else if (s.charAt(i) == ')') {
+                if (stack.isEmpty()) continue;
+                else if (stack.peek() > 0)
+                    res[i] = 2 + res[stack.pop() - 1] + res[i-1]; // connect two valid seq, or increase cur len of valid seq
+                else {
+                    res[i] = 2 + res[i - 1]; // handle the special case that the leftmost char is '('
+                    stack.pop();
+                }
+            }
+            maxLen = Math.max(res[i], maxLen);
+        }
+        return maxLen;
+    }
+}
