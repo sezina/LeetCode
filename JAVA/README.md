@@ -1,5 +1,5 @@
 
-Solved Count: 133
+Solved Count: 134
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -134,3 +134,4 @@ Solved Count: 133
 * [Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)
 * [Text Justification](https://oj.leetcode.com/problems/text-justification/)
 * [Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)
+* [Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)
