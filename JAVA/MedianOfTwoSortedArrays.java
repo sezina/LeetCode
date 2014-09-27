@@ -33,3 +33,31 @@ public class Solution {
         return (double)b;
     }
 }
+
+// using find kth min
+public class Solution {
+    public double findMedianSortedArrays(int A[], int B[]) {
+        int alen = A.length, blen = B.length;
+        int k = (alen + blen) / 2;
+        if ((alen + blen) % 2 == 1) {
+            return (double)findKth(k + 1, A, 0, alen, B, 0, blen);
+        }
+        return ((double)findKth(k, A, 0, alen, B, 0, blen) + (double)findKth(k+1, A,0,alen, B,0,blen)) / 2;
+    }
+    
+    private int findKth(int k, int[] A, int al, int ah, int[]B, int bl, int bh) {
+        if (ah - al > bh - bl)
+            return findKth(k, B, bl, bh, A, al, ah);
+        if (ah-al == 0)
+            return B[bl + k - 1];
+        if (k == 1)
+            return Math.min(A[al], B[bl]);
+        int pa = Math.min(k/2, ah-al), pb = k - pa;
+        if (A[al+pa-1] < B[bl+pb-1])
+            return findKth(k - pa, A, al + pa, ah, B, bl, bh);
+        else if (A[al+pa-1] > B[bl+pb-1])
+            return findKth(k-pb, A, al, ah, B, bl+pb, bh);
+        else
+            return A[al+pa-1];
+    }
+}
