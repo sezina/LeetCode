@@ -68,3 +68,23 @@ public class Solution {
         return cuts[0];
     }
 }
+
+// only O(n) space
+public class Solution {
+    public int minCut(String s) {
+        int len = s.length();
+        int[] cuts = new int[len + 1];
+        for (int i = 0; i <= len; i++) cuts[i] = i - 1;
+        for (int i = 0; i < len; i++) {
+            // odd len palindrome
+            for (int j = 0; i - j >= 0 && i + j < len && s.charAt(i-j) == s.charAt(i+j); j++)
+                cuts[i+j+1] = Math.min(cuts[i+j+1], 1 + cuts[i - j]);
+                
+            // even len palindrome
+            for (int j = 1; i - j + 1 >= 0 && i + j < len && s.charAt(i-j+1) == s.charAt(i+j); j++)
+                cuts[i+j+1] = Math.min(cuts[i+j+1], 1 + cuts[i - j + 1]);
+        }
+        
+        return cuts[len];
+    }
+}
