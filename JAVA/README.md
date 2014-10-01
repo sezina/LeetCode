@@ -1,5 +1,5 @@
 
-Solved Count: 137
+Solved Count: 138
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -138,3 +138,4 @@ Solved Count: 137
 * [Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)
 * [Palindrome Partitioning II](https://oj.leetcode.com/problems/palindrome-partitioning-ii/)
 * [Edit Distance](http://oj.leetcode.com/problems/edit-distance/)
+* [Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)
