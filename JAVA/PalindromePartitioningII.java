@@ -42,3 +42,29 @@ public class Solution {
         return s.length() - 1;
     }
 }
+
+// dynamic programming
+public class Solution {
+    public int minCut(String s) {
+        if (s.length() < 2) return 0;
+        
+        int len = s.length();
+        boolean[][] isPalin = new boolean[len][len];
+        int[] cuts = new int[len];
+        
+        for (int i = len - 1; i >= 0; i--) {
+            cuts[i] = len - i - 1;
+            for (int j = i; j < len; j++) {
+                if (j - i < 2) isPalin[i][j] = (s.charAt(i) == s.charAt(j));
+                else isPalin[i][j] = (s.charAt(i) == s.charAt(j) && isPalin[i + 1][j - 1]);
+                
+                if (isPalin[i][j]) {
+                    if (j == len - 1) cuts[i] = 0;
+                    else cuts[i] = Math.min(cuts[i], cuts[j + 1] + 1);
+                }
+            }
+        }
+        
+        return cuts[0];
+    }
+}
