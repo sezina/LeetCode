@@ -39,3 +39,25 @@ public class Solution {
         return ans;
     }
 }
+
+// neat code
+public class Solution {
+    public List<List<Integer>> threeSum(int[] num) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        if (num.length < 3) return res;
+        Arrays.sort(num);
+        Map<Integer, Integer> indexMap = new HashMap<Integer, Integer>();
+        for (int i = 0; i < num.length; i++)
+            indexMap.put(num[i], i);
+        
+        for (int i = 0; i < num.length; i++) {
+            if (i > 0 && num[i] == num[i - 1]) continue;
+            for (int j = i + 1; j < num.length; j++) {
+                if (j > i + 1 && num[j] == num[j - 1]) continue;
+                if (indexMap.containsKey(-num[i]-num[j]) && indexMap.get(-num[i]-num[j]) > j)
+                    res.add(Arrays.asList(num[i], num[j], -num[i]-num[j]));
+            }
+        }
+        return res;
+    }
+}
