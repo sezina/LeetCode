@@ -1,5 +1,5 @@
 
-Solved Count: 141
+Solved Count: 142
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -142,3 +142,4 @@ Solved Count: 141
 * [Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)
 * [Scramble String](https://oj.leetcode.com/problems/scramble-string/)
 * [3Sum](https://oj.leetcode.com/problems/3sum/)
+* [4Sum](https://oj.leetcode.com/problems/4sum/)
