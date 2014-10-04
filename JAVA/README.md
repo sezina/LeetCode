@@ -1,5 +1,5 @@
 
-Solved Count: 148
+Solved Count: 149
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -149,3 +149,4 @@ Solved Count: 148
 * [Valid Number](https://oj.leetcode.com/problems/valid-number/)
 * [Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)
 * [Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)
+* [Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)
