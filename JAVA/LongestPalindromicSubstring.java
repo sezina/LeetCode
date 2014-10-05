@@ -28,3 +28,5 @@ public class Solution {
         return s.substring(begin, end);
     }
 }
+
+// manacher algorithm
