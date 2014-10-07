@@ -27,3 +27,29 @@ public class Solution {
         return result;
     }
 }
+
+
+public class Solution {
+    public List<String> generateParenthesis(int n) {
+        char[] arr = new char[n*2];
+        List<String> result = new ArrayList<String>();
+        genHelper(result,arr,n,n,0);
+        return result;
+    }
+    
+    private void genHelper(List<String> res, char[] arr, int left, int right, int index) {
+        if (left == 0 && right == 0) {
+            res.add(String.copyValueOf(arr));
+            return;
+        }
+        
+        if (left > 0) {
+            arr[index] = '(';
+            genHelper(res, arr, left - 1, right, index + 1);
+        }
+        if (right > left) {
+            arr[index] = ')';
+            genHelper(res, arr, left, right - 1, index + 1);
+        }
+    }
+}

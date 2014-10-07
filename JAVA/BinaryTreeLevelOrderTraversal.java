@@ -38,3 +38,26 @@ public class Solution {
         return result;
     }
 }
+
+// recursive solution O(nlogn) time and O(n) space
+public class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new LinkedList<List<Integer>>();
+        traverse(root, result, 0);
+        return result;
+    }
+    
+    private void traverse(TreeNode root, List<List<Integer>> res, int level) {
+        if (root == null) return;
+        
+        List<Integer> ans = null;
+        if (res.size() == level) {
+            ans = new ArrayList<Integer>();
+            res.add(ans);
+        } else 
+            ans = res.get(level);
+        ans.add(root.val);
+        traverse(root.left, res, level+1);
+        traverse(root.right, res, level+1);
+    }
+}
