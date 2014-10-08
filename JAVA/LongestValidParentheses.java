@@ -60,3 +60,31 @@ public class Solution {
         return maxLen;
     }
 }
+
+// 
+public class Solution {
+    public int longestValidParentheses(String s) {
+        if (s == null || s.length() < 2) return 0;
+        int maxLen = 0, n = s.length();
+        Stack<Integer> index = new Stack<Integer>();
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == '(') index.add(i);
+            else {
+                if (index.isEmpty()) index.add(i);
+                else if (s.charAt(index.peek()) == '(') index.pop();
+                else index.add(i);
+            }
+        }
+        if (index.isEmpty()) maxLen = n;
+        else {
+            int start = 0, end = n;
+            while (!index.isEmpty()) {
+                start = index.pop();
+                maxLen = Math.max(maxLen, end - start - 1);
+                end = start;
+            }
+            maxLen = Math.max(maxLen, end);
+        }
+        return maxLen;
+    }
+}
