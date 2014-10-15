@@ -49,3 +49,23 @@ public class Solution {
         return res[n - 1];
     }
 }
+
+public class Solution {
+    public int jump(int[] A) {
+        int n = A.length;
+        if (n == 1) return 0;
+        int[] steps = new int[A.length];
+        Arrays.fill(steps, Integer.MAX_VALUE);
+        steps[0] = 0;
+        for (int i = 1; i < A[0] && i < A.length; i++) steps[i] = 1;
+        for (int i = 1; i < A.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (i <= A[j] + j) {
+                    steps[i] = Math.min(steps[i], steps[j] + 1);
+                    break;
+                }
+            }
+        }
+        return steps[A.length - 1];
+    }
+}
