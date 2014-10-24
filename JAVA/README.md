@@ -1,5 +1,5 @@
 
-Solved Count: 153
+Solved Count: 154
 
 * [Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)([Solution](https://github.com/sezina/LeetCode/blob/master/JAVA/LinkedListCycle.java))
 * [Single Number](https://oj.leetcode.com/problems/single-number/)
@@ -154,3 +154,4 @@ Solved Count: 153
 * [Maximal Rectangle](https://oj.leetcode.com/problems/maximal-rectangle/)
 * [Binary Trapping Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)
 * [Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+* [Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
