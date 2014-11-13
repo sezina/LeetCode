@@ -14,3 +14,21 @@ public class Solution {
         return result * sign;
     }
 }
+
+// the test rule has changed
+public class Solution {
+    public int reverse(int x) {
+        if (x == Integer.MIN_VALUE)
+            return 0;
+        int sign = (x < 0) ? -1 : 1;
+        int positive = Math.abs(x);
+        int result = 0;
+        while (positive != 0) {
+            if (result > (Integer.MAX_VALUE - positive % 10) / 10)
+                return 0;
+            result = 10 * result + positive % 10;
+            positive /= 10;
+        }
+        return result * sign;
+    }
+}
