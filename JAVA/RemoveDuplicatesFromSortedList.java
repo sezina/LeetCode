@@ -11,31 +11,14 @@
  */
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null)
-            return null;
-        ListNode traversal = head;
-        ListNode nextNode = traversal.next;
-        while (nextNode != null) {
-            if (traversal.val == nextNode.val)
-                traversal.next = nextNode.next;
-            else 
-                traversal = traversal.next;
-            nextNode = nextNode.next;
-        }
-        return head;
-    }
-}
-
-
-public class Solution2 {
-    public ListNode deleteDuplicates(ListNode head) {
         if (head != null) {
-            ListNode traversal = head;
+            ListNode traversal = head, temp;
             while (traversal.next != null) {
-                if (traversal.val == traversal.next.val)
+                if (traversal.val == traversal.next.val) {
+                    temp = traversal.next;
                     traversal.next = traversal.next.next;
-                else 
-                    traversal = traversal.next;
+                    temp.next = null;
+                } else traversal = traversal.next;
             }
         }
         return head;
