@@ -23,3 +23,13 @@ public class Solution {
         return isSame;
     }
 }
+
+// neat code
+public class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == q) return true;
+        else if (q != null && p != null && q.val == p.val)
+            return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        return false;
+    }
+}
