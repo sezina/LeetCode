@@ -45,3 +45,37 @@ public class Solution2 {
         return symmetricTest(leftNode.left, rightNode.right) && symmetricTest(leftNode.right, rightNode.left);
     }
 }
+
+public class Solution {
+    private StringBuffer leftSb;
+    private StringBuffer rightSb;
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null) return true;
+        leftSb = new StringBuffer();
+        rightSb = new StringBuffer();
+        preorder1(root.left);
+        preorder2(root.right);
+        if (leftSb.toString().equals(rightSb.toString())) return true;
+        return false;
+    }
+    
+    private void preorder1(TreeNode node) {
+        if (node == null) {
+            leftSb.append('#');
+            return;
+        }
+        leftSb.append(node.val);
+        preorder1(node.left);
+        preorder1(node.right);
+    }
+    
+    private void preorder2(TreeNode node ) {
+        if (node == null) {
+            rightSb.append('#');
+            return;
+        }
+        rightSb.append(node.val);
+        preorder2(node.right);
+        preorder2(node.left);
+    }
+}
