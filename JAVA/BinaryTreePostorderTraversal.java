@@ -34,3 +34,49 @@ public class Solution {
         return result;
     }
 }
+
+// using only one stack;
+public class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<Integer>();
+        if (root == null) return res;
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        do {
+            while (root != null) {
+                if (root.right != null) stack.push(root.right);
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if (root.right != null && !stack.isEmpty() && root.right.val == stack.peek().val) {
+                stack.pop();
+                stack.push(root);
+                root = root.right;
+            } else {
+                res.add(root.val);
+                root = null;
+            }
+        } while (!stack.isEmpty());
+        return res;
+    }
+}
+
+// using two stack
+public class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<Integer>();
+        if (root == null) return res;
+        Stack<TreeNode> stack1 = new Stack<TreeNode>();
+        Stack<TreeNode> stack2 = new Stack<TreeNode>();
+        stack1.push(root);
+        while (!stack1.isEmpty()) {
+            root = stack1.pop();
+            stack2.push(root);
+            if (root.left != null) stack1.push(root.left);
+            if (root.right != null) stack1.push(root.right);
+        }
+        while (!stack2.isEmpty()) 
+            res.add(stack2.pop().val);
+        return res;
+    }
+}
