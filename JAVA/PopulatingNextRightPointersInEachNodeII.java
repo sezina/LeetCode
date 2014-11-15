@@ -60,3 +60,34 @@ public class Solution2 {
         }
     }
 }
+
+// level by level, recursive
+public class Solution {
+    public void connect(TreeLinkNode root) {
+        while (root != null && root.left == null && root.right == null) root = root.next;
+        if (root == null) return;
+        TreeLinkNode node, pre;
+        if (root.left == null) pre = root.right;
+        else {
+            pre = root.left;
+            if (root.right != null) {
+                pre.next = root.right;
+                pre = pre.next;
+            }
+        }
+        node = root.next;
+        while (node != null) {
+            if (node.left != null) {
+                pre.next = node.left;
+                pre = pre.next;
+            }
+            if (node.right != null) {
+                pre.next = node.right;
+                pre = pre.next;
+            }
+            node = node.next;
+        }
+        if (root.left != null) connect(root.left);
+        else connect(root.right);
+    }
+}
