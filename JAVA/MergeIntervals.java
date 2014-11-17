@@ -29,8 +29,6 @@ public class Solution {
                 if (preIn.end < v.start) {
                     res.add(preIn);
                     preIn = v;
-                } else if (preIn.start > v.end) {
-                    res.add(v);
                 } else {
                     preIn.start = Math.min(preIn.start, v.start);
                     preIn.end = Math.max(preIn.end, v.end);
