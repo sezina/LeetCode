@@ -48,3 +48,17 @@ public class Solution {
         return num[high];
     }
 }
+
+public class Solution {
+    public int findMin(int[] num) {
+        int low = 0, high = num.length - 1;
+        
+        while (low < high) {
+            if (num[low] < num[high]) return num[low];
+            int mid = low + (high - low) / 2;
+            if (num[mid] >= num[low]) low = mid + 1;
+            else high = mid;
+        }
+        return num[low];
+    }
+}
