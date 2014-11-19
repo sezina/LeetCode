@@ -7,6 +7,24 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+// recursive
+public class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        zigzagHelper(root, res, 0);
+        return res;
+    }
+    
+    private void zigzagHelper(TreeNode root, List<List<Integer>> res, int level) {
+        if (root == null) return;
+        if (res.size() == level) res.add(new ArrayList<Integer>());
+        if (level % 2 == 0) res.get(level).add(root.val);
+        else res.get(level).add(0, root.val);
+        zigzagHelper(root.left, res, level + 1);
+        zigzagHelper(root.right, res, level + 1);
+    }
+}
+
 public class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new LinkedList<List<Integer>>();
