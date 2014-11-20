@@ -29,7 +29,7 @@ public class Solution {
             step--;
             if (step == -1) return false;
             step = Math.max(step, A[i]);
-            if (step + i >= A.length) return true;
+            if (step + i >= A.length - 1) return true;
         }
         return true;
     }
