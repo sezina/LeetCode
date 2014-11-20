@@ -69,3 +69,19 @@ public class Solution {
         return steps[A.length - 1];
     }
 }
+
+// O(n) time, O(1) space
+public class Solution {
+    public int jump(int[] A) {
+        if (A.length < 2) return 0;
+        int count = 1, last = A[0], maxrange = A[0];
+        for (int i = 0; i < A.length; i++) {
+            if (last >= A.length - 1) break;
+            maxrange = Math.max(maxrange, i + A[i]);
+            if (i < last) continue;
+            count++;
+            last = maxrange;
+        }
+        return count;
+    }
+}
