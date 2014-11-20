@@ -1,113 +1,68 @@
 public class LRUCache {
     
-    private static class Node {
-        int key;
-        int value;
-        Node before;
+    private class Node {
+        Node pre;
         Node next;
-        Node(int key, int value) {
+        int val;
+        int key;
+        Node(int key, int val) {
+            this.val = val;
             this.key = key;
-            this.value = value;
-            before = null;
-            next = null;
+            this.pre = null;
+            this.next = null;
         }
     }
     
-    private int capacity;
+    private int cap;
     private Map<Integer, Node> cache;
     private Node head;
     private Node tail;
     
     public LRUCache(int capacity) {
-        this.capacity = capacity;
-        cache = new HashMap<Integer, Node>(capacity);
-        head = null;
-        tail = null;
+        this.cap = capacity;
+        cache = new HashMap<Integer, Node>();
+        head = tail = null;
     }
     
     public int get(int key) {
         if (cache.containsKey(key)) {
             Node node = cache.get(key);
-            if (node == head) return head.value;
-            if (node == tail) {
-                head = tail;
-                tail = tail.before;
-                return node.value;
+            if (node == head) {
+                // do nothing
+            } else {
+                if (node == tail) {
+                    tail = tail.pre;
+                    tail.next = null;
+                } else {
+                    node.next.pre = node.pre;
+                    node.pre.next = node.next;
+                }
+                node.next = head;
+                head.pre = node;
+                node.pre = null;
+                head = node;
             }
-            node.before.next = node.next;
-            node.next.before = node.before;
-
-            node.before = tail;
-            tail.next = node;
-            node.next = head;
-            head.before = node;
-            head = node;
-            tail = head.before;
-
-            return node.value;
+            return node.val;
         }
         return -1;
     }
     
     public void set(int key, int value) {
-        if (capacity == 0) return;
-        if (!cache.containsKey(key)) {
+        if (get(key) != -1) head.val = value;
+        else {
             Node node = new Node(key, value);
-            if (cache.isEmpty()) {
-                tail = head = node;
-                head.next = tail;
-                head.before = tail;
-                tail.next = head;
-                tail.before = head;
-            } else if (cache.size() == capacity) {
-                if (capacity == 1) {
-                    cache.remove(head.key);
-                    tail = head = node;
-                    head.next = tail;
-                    head.before = tail;
-                    tail.next = head;
-                    tail.before = head;
-                } else {
-                    node.next = head;
-                    node.before = tail;
-                    head.before = node;
-                    tail.next = node;
-                    head = node;
-                    // remove
-                    head.before = tail.before;
-                    tail.before.next = head;
-                    cache.remove(tail.key);
-                    tail = head.before;
-                }
-            } else {
+            if (cache.size() == cap) {
+                int temp = tail.key;
+                tail = tail.pre;
+                if (tail != null) tail.next = null;
+                cache.remove(temp);
+            }
+            if (head == null) head = tail = node;
+            else {
                 node.next = head;
-                node.before = tail;
-                head.before = node;
-                tail.next = node;
+                head.pre = node;
                 head = node;
             }
-            cache.put(key, node);
-        } else {
-            Node node = cache.get(key);
-            if (node == head) {
-                head.value = value;
-                return;
-            }
-            if (node == tail) {
-                tail.value = value;
-                head = tail;
-                tail = head.before;
-                return;
-            }
-            node.value = value;
-            node.before.next = node.next;
-            node.next.before = node.before;
-            
-            node.before = tail;
-            tail.next = node;
-            node.next = head;
-            head.before = node;
-            head = node;
             cache.put(key, node);
         }
     }
