@@ -19,3 +19,18 @@ public class Solution {
         return step != 0;
     }
 }
+
+// more clear
+public class Solution {
+    public boolean canJump(int[] A) {
+        if (A.length < 2) return true;
+        int step = A[0];
+        for (int i = 1; i < A.length; i++) {
+            step--;
+            if (step == -1) return false;
+            step = Math.max(step, A[i]);
+            if (step + i >= A.length) return true;
+        }
+        return true;
+    }
+}
