@@ -20,3 +20,11 @@ public class Solution2 {
         return s.length() - last - 1;
     }
 }
+
+public class Solution3 {
+    public int lengthOfLastWord(String s) {
+        String str[] = s.split(" ");
+        int n = str.length;
+        return (n == 0)? 0 : str[n - 1].length();
+    }
+}
